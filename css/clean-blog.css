@@ -62,8 +62,8 @@ hr.small {
     background:url("../img/logora-blk.png") center top;
 }
 .navbar-custom .nav li a {
-  text-transform: uppercase;
-  font-size: 12px;
+  text-transform:Uppercase;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -409,6 +409,16 @@ body {
 
 .dropdown-menu{
     background:black;
+    border:none;
+    margin: 0 !important;
+}
+.dropdown-menu li{
+    padding:0 !important;
+    margin: 0 !important;
+    line-height: 13px;
+}
+.dropdown-menu li a{
+    padding: 10px !important;
 }
 .dropdown-menu li a:hover{
     background:grey;
