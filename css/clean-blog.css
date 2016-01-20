@@ -57,9 +57,8 @@ hr.small {
 .navbar-custom .navbar-brand {
     width: 200px;
     height: 40px;
-    margin-top: 9px;
-    margin-left: 10px !important;
-    background:url("../img/logora.png") center top;
+    margin-top: 5px;
+    background:url("../img/logora-blk.png") center top;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -75,8 +74,8 @@ hr.small {
   .navbar-custom .navbar-brand {
       width: 200px;
       height: 40px;
-      margin: 9px;
-      display: block;
+      margin-top: 9px;
+      margin-left:10px !important;
       background:url("../img/logora.png") center top;
   }
   .navbar-custom .navbar-brand:hover,
