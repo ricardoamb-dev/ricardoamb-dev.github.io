@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da63b44-8aa1-4a6b-a52e-0610ba976839" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/home-bg.jpg" afterPath="$PROJECT_DIR$/img/home-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logora.png" afterPath="$PROJECT_DIR$/img/logora.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/clean-blog.css" afterPath="$PROJECT_DIR$/css/clean-blog.css" />
     </list>
     <ignored path="ricardoamb-dev.github.io.iws" />
@@ -54,8 +52,8 @@
       <file leaf-file-name="clean-blog.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/clean-blog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82616824">
-              <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.66728973">
+              <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -336,8 +334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/clean-blog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82616824">
-          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.66728973">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
           <folding />
         </state>
       </provider>

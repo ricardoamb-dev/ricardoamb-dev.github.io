@@ -58,6 +58,7 @@ hr.small {
     width: 200px;
     height: 40px;
     margin-top: 5px;
+    margin-left: 5px !important;
     background:url("../img/logora-blk.png") center top;
 }
 .navbar-custom .nav li a {
