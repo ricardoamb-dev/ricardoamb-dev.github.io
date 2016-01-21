@@ -74,7 +74,7 @@
 
     </nav>
 
-    <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">
+    <header class="intro-header header-contato" style="background-image: url('img/contact-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -93,7 +93,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-10 col-lg-10 col-lg-offset-1">
-                        <h1 class="h1">Quer conversar comigo?!<br><small>Envie uma mensagem e prometo tentar responder o mais rápido possível!</small></h1>
+                        <h1 class="h1">Quer conversar comigo?!<br><small>Envie uma mensagem e prometo tentar responder!</small></h1>
                     </div>
                 </div>
             </div>
@@ -102,44 +102,43 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="well well-sm">
-                        <form>
-                            <div class="row">
+                        <form method="post" name="contactForm" id="contactForm" class="contactForm" novalidate>
+                            <div class="row formFields">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">
-                                            Nome</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nome" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">
-                                            E-mail</label>
+                                        <label for="nome">Nome</label>
                                         <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                            <input type="email" class="form-control" id="email" placeholder="E-mail" required="required" /></div>
+                                            <span class="input-group-addon square-mail"><i class="fa fa-user fa-lg" style="margin:0 2px;"></i></span>
+                                            <input type="text" class="form-control" id="nome" placeholder="Nome" required="required" />
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="subject">
-                                            Assunto</label>
+                                        <label for="email">E-mail</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon square-mail"><i class="fa fa-envelope fa-lg"></i></span>
+                                            <input type="email" class="form-control" id="email" placeholder="E-mail" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Assunto</label>
                                         <select id="subject" name="assunto" class="form-control" required="required">
                                             <option value="nenhum" selected="">Escolha:</option>
-                                            <option value="sugestao">Sugestão de artigo/tutorial</option>
+                                            <option value="sugestao">Sugestão</option>
                                             <option value="critica">Critica</option>
                                             <option value="duvida">Dúvida</option>
+                                            <option value="batepapo">Bate-Papo</option>
+                                            <option value="outro">Outros</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">
-                                            Mensagem</label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                      placeholder="Mensagem"></textarea>
+                                        <label for="message">Mensagem</label>
+                                        <textarea name="message" id="message" class="form-control" rows="11" cols="25" required="required" placeholder="Mensagem"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                                        Enviar</button>
+                                    <button class="btn btn-success pull-right" id="btnContact">Enviar</button>
                                 </div>
                             </div>
                         </form>
@@ -150,20 +149,35 @@
                         <legend><span class="glyphicon glyphicon-globe"></span> Onde Estou?</legend>
                         <address>
                             <strong>Ricardo Amb</strong><br>
+                            CP: 13886 - CEP 13560-000
                             Pirassununga - SP / Brasil<br>
                         </address>
                         <address>
                             <strong>Social Networking</strong><br>
-                            <a href="http://www.facebook.com/ricardoamb83"><i class="fa fa-facebook-official"></i> @ricardoamb83</a><br>
-                            <a href="http://www.twitter.com/ricardo_amb"><i class="fa fa-twitter"></i> @ricardo_amb</a><br>
-                            <a href="http://www.youtube.com"><i class="fa fa-youtube"></i> Canal DeeSquare</a>
+                            <a href="http://www.facebook.com/ricardoamb83" style="margin-right:5px;"><i class="fa fa-facebook-square fa-lg"></i></a>
+                            <a href="http://www.twitter.com/ricardo_amb" style="margin-right:5px;"><i class="fa fa-twitter-square fa-lg"></i></a>
+                            <a href="#" style="margin-right:5px;"><i class="fa fa-instagram fa-lg"></i></a>
+                            <a href="http://www.youtube.com" style="margin-right:5px;"><i class="fa fa-youtube-square fa-lg"></i></a>
+                            <a href="http://www.vimeo.com" style="margin-right:5px;"><i class="fa fa-vimeo-square fa-lg"></i></a>
+                            <a href="http://www.github.com" style="margin-right:5px;"><i class="fa fa-github-square fa-lg"></i></a>
+                            <a href="mailto:ricardoamb.dev@gmail.com" style="margin-right:5px;"><i class="fa fa-envelope-square fa-lg"></i></a>
                         </address>
                     </form>
                 </div>
             </div>
         </div>
 
-    <hr>
+    <hr class="space20top">
+
+    <div class="jumbotron jumbotron-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-lg-10 col-lg-offset-1">
+                    <h1 class="h1">Quer conversar comigo?!<br><small>Envie uma mensagem e prometo tentar responder!</small></h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -196,21 +210,16 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; Ricardo Amb 2016</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- jS -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-
+    <script src="js/clean-blog.js"></script>
 </body>
 
 </html>
