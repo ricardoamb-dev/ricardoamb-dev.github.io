@@ -39,6 +39,7 @@ jQuery(document).ready(function($) {
         var err = 0;
         var nome = $('#nome');
         var email = $('#email');
+        var mensagem = $('#mensagem');
         var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
         if(nome.val() == ""){
             nome.addClass('input-error');
@@ -54,7 +55,14 @@ jQuery(document).ready(function($) {
                 email.removeClass('input-error');
             }else{
                 email.addClass('input-error');
-                err++;            }
+                err++;
+            }
+        }
+        if(mensagem.val() == ""){
+            mensagem.addClass('input-error');
+            err++;
+        }else if(mensagem.hasClass('input-error')){
+            mensagem.removeClass('input-error');
         }
     });
 });
