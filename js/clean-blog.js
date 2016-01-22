@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
                 result.html('Failed to get feed.' + error);
             }
         });
-        result.append('</ul>');*/
+        result.append('</ul>');
 
         site = 'http://sentapuadesign.com/webservice/index.php';
         $.ajax({
@@ -97,6 +97,18 @@ jQuery(document).ready(function($) {
             success: function(res) {
                 var headline = $(res.responseText).text();
                 $("#conteudo").html(headline);
+            }
+        }).done(function(){
+            alert('finalizado');
+        });
+        */
+
+        site = 'http://sentapuadesign.com/webservice/index.php';
+        $.ajax({
+            url: site,
+            type: 'GET',
+            success: function(data) {
+                console.log(data);
             }
         }).done(function(){
             alert('finalizado');
