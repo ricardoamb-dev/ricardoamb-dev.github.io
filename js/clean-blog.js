@@ -1,6 +1,8 @@
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
-
+    jQuery.support.cors = true;
+    //header('Access-Control-Allow-Origin: *');
+    //header('Access-Control-Allow-Methods: GET, POST, PUT');
     //
     // Função para interação do navbar com o scroll
     //
@@ -64,5 +66,41 @@ jQuery(document).ready(function($) {
         }else if(mensagem.hasClass('input-error')){
             mensagem.removeClass('input-error');
         }
+    });
+
+    $('.fieldLink').click(function(){
+        alert('primeira etapa');
+        var result = $('.result');
+        result.html('<ul>');
+
+        /*$.ajax({
+            url: 'http://sentapuadesign.com/webservice/index.php',
+            crossDomain: true,
+            dataType: 'xml',
+            success: function(data){
+                $(data).find('catalogo produto').each(function(){
+                    var bookName = $(this).find('nome').text();
+                    result.append('<li>' + bookName + '</li>');
+                });
+                console.log(data);
+            },
+            error: function(codigoerro, er, error){
+                result.html('Failed to get feed.' + error);
+            }
+        });
+        result.append('</ul>');*/
+
+        site = 'http://sentapuadesign.com/webservice/index.php';
+        $.ajax({
+            url: site,
+            type: 'GET',
+            success: function(res) {
+                var headline = $(res.responseText).text();
+                $("#conteudo").html(headline);
+            }
+        }).done(function(){
+            alert('finalizado');
+        });
+        return false;
     });
 });
