@@ -1,14 +1,13 @@
 jQuery(document).ready(function($) {
 
-    // var site = 'http://localhost/webservice/ws/getPosts.php';
+    //var site = 'http://localhost/webservice/ws/getPosts.php';
     var site = 'http://sentapuadesign.com/webservice/ws/getPosts.php';
-    var headline;
     $.ajax({
         url: site,
         type: 'GET',
         success: function(res) {
-            headline = $(res.responseText).text();
-            $("#blogroll").html(headline);
+            alert('chegou aki 1');
+            $("#blogroll").html(res);
         }
     }).done(function(){
         alert('Gotcha!');
