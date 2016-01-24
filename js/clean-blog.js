@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 
-    var site = 'http://localhost/webservice/ws/getPosts.php';
+    // var site = 'http://localhost/webservice/ws/getPosts.php';
+    var site = 'http://sentapuadesign.com/webservice/ws/getPosts.php';
     var headline;
     $.ajax({
         url: site,
