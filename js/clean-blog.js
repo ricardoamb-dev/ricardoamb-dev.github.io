@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
             $("#blogroll").html(res);
         }
     }).done(function(){
-
+        alert('Gotcha!');
     });
 
     //
