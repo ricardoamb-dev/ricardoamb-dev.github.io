@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         type: 'GET',
         success: function(res) {
             headline = $(res.responseText).text();
-            $("#blogroll").html(res);
+            $("#blogroll").html(headline);
         }
     }).done(function(){
         alert('Gotcha!');
