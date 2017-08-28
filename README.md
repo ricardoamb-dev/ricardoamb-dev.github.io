@@ -1,4 +1,4 @@
-ricardoamb-dev.github.io
+ricardoamb.github.io
 ========================
 
-Ricardo Amb web page
+My very own website
