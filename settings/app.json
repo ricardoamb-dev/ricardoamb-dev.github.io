@@ -1,0 +1,15 @@
+{
+  "applicable" : {
+    "developer" : {
+      "projectName":"developer",
+      "projectType":"creator",
+      "projectVersion":"1.0.1-alpha",
+      "projectKey":"none",
+      "clientData": {
+        "projectClientKey":"none",
+        "projectClientExpire":false,
+        "projectClientExpire":"2018-31-12"
+      }
+    }
+  }
+}
