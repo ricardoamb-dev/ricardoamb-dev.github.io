@@ -1,9 +1,14 @@
 {
   "developerKey":"8d7e6faa958e246b49eb7fc07fb141d9",
+  "developerEmail":"ricardoamb.dev@gmail.com",
+  "developerName":"Agência Sentapúa",
+  "developerUrl":"https://www.agenciasentapua.com.br",
   "applicable" : {
     "developer" : {
       "projectName":"developer",
       "projectType":"creator",
+      "projectStatus":true,
+      "projectForceLoad":true,
       "projectVersion":"1.0.1-alpha",
       "projectKey":"none",
       "clientData": {
