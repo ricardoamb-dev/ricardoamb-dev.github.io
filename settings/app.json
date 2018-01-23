@@ -8,7 +8,7 @@
       "projectName":"developer",
       "projectType":"creator",
       "projectStatus":true,
-      "projectForceLoad":true,
+      "projectForceLoad":false,
       "projectVersion":"1.0.1-alpha",
       "projectKey":"none",
       "clientData": {
