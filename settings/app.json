@@ -4,7 +4,7 @@
   "developerName":"Agência Sentapúa",
   "developerUrl":"https://www.agenciasentapua.com.br",
   "applicable" : {
-    "developer" : {
+    "sitedata" : {
       "projectName":"developer",
       "projectType":"creator",
       "projectStatus":true,
