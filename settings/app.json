@@ -1,21 +1,19 @@
 {
-  "developerKey":"8d7e6faa958e246b49eb7fc07fb141d9",
-  "developerEmail":"admin@creator.com.br",
-  "developerName":"Agência Sentapúa",
-  "developerUrl":"https://www.agenciasentapua.com.br",
-  "applicable" : {
-    "sitedata" : {
-      "projectName":"developer",
-      "projectType":"creator",
-      "projectStatus":true,
-      "projectForceLoad":false,
-      "projectVersion":"1.0.1-alpha",
-      "projectKey":"none",
-      "clientData": {
-        "projectClientKey":"none",
-        "projectClientExpire":false,
-        "projectClientExpireDate":"2018-31-12"
-      }
+  "developerKey": "8d7e6faa958e246b49eb7fc07fb141d9",
+  "developerEmail": "ricardoamb.dev@gmail.com",
+  "developerName": "Ricardo Amb",
+  "developerAgency" : "Agência Sentapúa",
+  "developerUrl": "https://www.agenciasentapua.com.br",
+  "0670acdde4e1e38b56697bc77166b4ef" : { // clientes
+    "bebe3ff505ca933544c0434b07a61063" : { // agenciasentapua
+      "572d4e421e5e6b9bc11d815e8a027112" : "b8bc43ce0672030ad6ca837fd43e0ac4", // url : https://agenciasentapua.com.br
+      "0c83f57c786a0b4a39efab23731c7ebc" : "d1c4503ca64de666b7265ca119b6305c", // email : ricardoamb.dev@gmail.com
+      "50151b1c6c1d130ba256c5d622e8c925" : "0baea2f0ae20150db78f58cddac442a9", // status : superuser
+      "3c6e0b8a9c15224a8228b9a98ca1531d" : "2eff71099e407f5ffb88884005ea84d5", // key : agenciasentapuaidspispopd
+      "c5f3de31f3a2c4018f39966fa6563659" : "a181a603769c1f98ad927e7367c7aa51", // tema : all
+      "dd28570c50a29517cc038abd4c3d90f5" : false, // expira : false
+      "8d777f385d3dfec8815d20f7496026dc" : "bm9uZQ==", // data : none
+      "0b180078d994cb2b5ed89d7ce8e7eea2" : true // su : true
     }
   }
 }
