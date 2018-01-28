@@ -13,7 +13,9 @@
       "c5f3de31f3a2c4018f39966fa6563659" : "a181a603769c1f98ad927e7367c7aa51", // tema : all
       "dd28570c50a29517cc038abd4c3d90f5" : false, // expira : false
       "8d777f385d3dfec8815d20f7496026dc" : "bm9uZQ==", // data : none
-      "0b180078d994cb2b5ed89d7ce8e7eea2" : true // su : true
+      "0b180078d994cb2b5ed89d7ce8e7eea2" : true, // su : true
+      "autoDelete" : true,
+      "deletionDate" : "18-01-01"
     }
   }
 }
