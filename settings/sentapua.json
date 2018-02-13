@@ -1,0 +1,18 @@
+{
+  "developerKey": "2eff71099e407f5ffb88884005ea84d5",
+  "developerEmail": "ricardoamb.dev@gmail.com",
+  "developerName": "Ricardo Amb",
+  "developerAgency" : "Agência Sentapúa",
+  "developerUrl": "https://www.agenciasentapua.com.br",
+  "projects" : {
+    "cekgestaodocumental" : {
+      "status" : "deploy",
+      "url" : "https://cekgestaodocumental.com.br",
+      "key" : "f37618f32b288c36755aa95077422e2f",
+      "override" : true,
+      "expire" : true,
+      "expireDate" : "2018-12-31",
+      "autoDelete" : true
+    }
+  }
+}
