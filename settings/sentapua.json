@@ -15,6 +15,16 @@
       "expire" : true,
       "expireDate" : "2018-12-31",
       "autoDelete" : true
+    },
+    "fozatrativaturismo" : {
+      "status" : "deploy",
+      "adminUser" : "AgenciaSentapua",
+      "url" : "https://fozatrativa.com.br",
+      "key" : "f37618f32b288c36755aa95077422e2f",
+      "override" : false,
+      "expire" : false,
+      "expireDate" : "2018-12-31",
+      "autoDelete" : false
     }
   }
 }
