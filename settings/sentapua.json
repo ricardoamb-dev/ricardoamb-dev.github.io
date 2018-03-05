@@ -7,7 +7,7 @@
   "developerUrl": "https://www.agenciasentapua.com.br",
   "projects" : {
     "cekgestaodocumental" : {
-      "status" : "active",
+      "status" : "deploy",
       "adminUser" : "AgenciaSentapua",
       "url" : "https://cekgestaodocumental.com.br",
       "key" : "f37618f32b288c36755aa95077422e2f",
