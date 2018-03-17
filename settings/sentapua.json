@@ -1,15 +1,18 @@
 {
-  "developerKey": "2eff71099e407f5ffb88884005ea84d5",
-  "developerEmail": "ricardoamb.dev@gmail.com",
-  "developerName": "Ricardo Amb",
-  "developerUser": "AgenciaSentapua",
-  "developerAgency" : "Agência Sentapúa",
-  "developerUrl": "https://www.agenciasentapua.com.br",
+  "developer" : {
+    "developerKey": "2eff71099e407f5ffb88884005ea84d5",
+    "developerEmail": "ricardoamb.dev@gmail.com",
+    "developerName": "Ricardo Amb",
+    "developerUser": "AgenciaSentapua",
+    "developerAgency" : "Agência Sentapúa",
+    "developerUrl": "https://www.agenciasentapua.com.br"
+  },
   "projects" : {
     "creator" : {
       "status" : "active",
       "adminUser" : "AgenciaSentapua",
-      "url" : "localhost"
+      "url" : "localhost",
+      "key" : "superuser"
     },
     "cekgestaodocumental" : {
       "status" : "active",
