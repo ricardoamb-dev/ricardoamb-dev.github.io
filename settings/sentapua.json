@@ -6,6 +6,11 @@
   "developerAgency" : "Agência Sentapúa",
   "developerUrl": "https://www.agenciasentapua.com.br",
   "projects" : {
+    "creator" : {
+      "status" : "active",
+      "adminUser" : "AgenciaSentapua",
+      "url" : "localhost"
+    }
     "cekgestaodocumental" : {
       "status" : "active",
       "adminUser" : "AgenciaSentapua",
