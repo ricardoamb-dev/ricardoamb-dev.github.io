@@ -33,6 +33,12 @@
       "expire" : false,
       "expireDate" : "2018-12-31",
       "autoDelete" : false
+    },
+    "sentapua" : {
+      "status" : "active",
+      "adminUser" : "AgenciaSentapua",
+      "url" : "localhost",
+      "key" : "superuser"
     }
   }
 }
