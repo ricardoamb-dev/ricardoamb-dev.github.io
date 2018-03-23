@@ -35,7 +35,7 @@
       "autoDelete" : false
     },
     "sentapua" : {
-      "status" : "deploy",
+      "status" : "suspended",
       "adminUser" : "AgenciaSentapua",
       "url" : "localhost",
       "key" : "superuser"
