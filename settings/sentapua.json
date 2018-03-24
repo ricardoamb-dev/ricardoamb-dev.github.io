@@ -46,7 +46,7 @@
       "status" : "active",
       "adminUser" : "AgenciaSentapua",
       "url" : "agenciasentapua.com.br",
-      "devMode" : true,
+      "devMode" : false,
       "key" : "superuser",
       "devMode" : true
     }
