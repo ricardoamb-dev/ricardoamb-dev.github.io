@@ -37,14 +37,16 @@
     "globallight" : {
       "status" : "active",
       "adminUser" : "AgenciaSentapua",
-      "url" : "https://globallight.art.br",
+      "url" : "globallight.art.br",
+      "devMode" : true
       "key" : "f37618f32b288c36755aa95077422e2f",
       "devMode" : true
     },
     "sentapua" : {
       "status" : "active",
       "adminUser" : "AgenciaSentapua",
-      "url" : "localhost",
+      "url" : "agenciasentapua.com.br",
+      "devMode" : "true",
       "key" : "superuser",
       "devMode" : true
     }
