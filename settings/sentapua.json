@@ -35,7 +35,7 @@
       "autoDelete" : false
     },
     "globallight" : {
-      "status" : "suspended",
+      "status" : "deploy",
       "adminUser" : "AgenciaSentapua",
       "url" : "globallight.art.br",
       "devMode" : true,
