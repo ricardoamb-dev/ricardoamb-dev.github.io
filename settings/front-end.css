@@ -37,6 +37,9 @@ p.display-4 {
 }
 
 @media screen and (max-width: 768px) {
+    h1.display-1 {
+        font-size: 50px;
+    }
     h2.display-4 {
         font-size: 22px;
     }
