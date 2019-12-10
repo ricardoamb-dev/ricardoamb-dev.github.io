@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Faça um orçamento do que você precisa para sua empresa ou negócio.">
+    <meta name="keywords" content="design, web, webdesign, websites, sites, development, desenvolvimento, criação, identidades visuais, impressos, papelaria, páginas, landing page, wordpress, semântica, jekyll, site estático, site dinâmico, codeigniter, laravel, php, html, css, Pirassununga, Leme, Porto Ferreira, interior de São Paulo">  
+    <meta name="theme-color" content="#336699">
+    <meta property="og:url" content="https://ricardoamb.com/orcamento/" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="Orçamento" />
+    <meta property="og:description" content="Faça um orçamento do que você precisa para sua empresa ou negócio." />
+    <meta property="og:image" content="https://ricardoamb.com/assets/images/default-image-fb.jpg" />
+    <meta property="fb:app_id" content="1129887787218133">
+    <title>Ricardo Amb > Orçamento</title>
+    
+    <link rel="stylesheet" href="https://ricardoamb.com/assets/css/style.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body class="page">
+
+
+
+<header id="header" class="default">
+    <div class="header-container">
+        <a href="https://ricardoamb.com" title="Voltar para a Página Principal" id="logo">
+            <img src="https://ricardoamb.com/assets/images/brand-default.svg" alt="Ricardo Amb">
+        </a>
+        <nav id="menu" rel="navigation">
+            <div id="mobile-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-container">
+                <span class="close-button"><img src="https://ricardoamb.com/assets/images/plus-icon.svg" alt="Fechar"></span>
+                <a href="https://ricardoamb.com"><i class="fa fa-home"></i></a>
+                <a href="https://ricardoamb.com/sobre">Sobre</a>
+                <a href="https://ricardoamb.com/portfolio">Portfólio</a>
+                <a href="https://ricardoamb.com/blog">Blog</a>
+                <a href="https://ricardoamb.com/contato">Contato</a>
+                <a href="https://buddy.ricardoamb.com">Entrar <i class="fa fa-sign-in"></i></a>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="header-background"></div>
+<main>
+    
+    <section id="page-content">
+        <section id="orcamento">
+    <header id="orca-header">
+        <h2>Solicite seu</h2>
+        <h1>Orçamento</h1>
+        <p>Ullamco sunt ipsum esse exercitation dolore quis ea occaecat labore. Officia anim aliquip amet esse dolore magna eu. Ex sunt sunt eu velit proident esse eiusmod. Et Lorem dolor excepteur irure adipisicing aliquip aute amet adipisicing. Aliqua quis nostrud et nulla non Lorem proident aute eiusmod. Magna commodo ipsum aliqua excepteur qui. Reprehenderit eiusmod reprehenderit quis aliquip consequat pariatur Lorem labore reprehenderit laborum occaecat nulla irure.</p>
+    </header>
+    <form id="orca-form">
+
+        <div id="etapas">
+            <div id="etapa-dados" class="active"><span>1</span> Seus Dados <i class="fa fa-long-arrow-right"></i></div>
+            <div id="etapa-tipo"><span>2</span> Tipo de Projeto <i class="fa fa-long-arrow-right"></i></div>
+            <div id="etapa-projeto"><span>3</span> Dados do Projeto <i class="fa fa-long-arrow-right"></i></div>
+            <div id="etapa-conclusao"><span>4</span> Conclusão <i class="fa fa-long-arrow-right"></i></div>
+            <div id="etapa-resumo"><span>5</span> Resumo <i class="fa fa-long-arrow-right"></i></div>
+        </div>
+
+        <!-- SEUS DADOS -->
+        <div id="dados" class="orca-section">
+            <h3>Seus Dados</h3>
+            <p>Informe seus dados para que eu possa entrar em contato com você após criar a proposta para seu projeto.</p>
+            <div class="line">
+                <fieldset class="orca-fieldset">
+                    <label for="orca-nome">Seu nome <span class="obrigatorio">*</span></label>
+                    <span class="msg msg-nome"></span>
+                    <input type="text" id="orca-nome" name="orca-nome" placeholder="João da Silva">
+                </fieldset>
+            </div>
+            <div class="line">
+                <fieldset class="orca-fieldset">
+                    <label for="orca-email">E-mail <span class="obrigatorio">*</span></label>
+                    <span class="msg msg-email"></span>
+                    <input type="text" id="orca-email" name="orca-email" placeholder="seuemail@seudominio.com.br">
+                </fieldset>
+            </div>
+            <div class="line two-columns">
+                <fieldset class="orca-fieldset">
+                    <label for="orca-cidade">Cidade <span class="obrigatorio">*</span></label>
+                    <span class="msg msg-cidade"></span>
+                    <input type="text" id="orca-cidade" name="orca-cidade" placeholder="Sua Cidade">
+                </fieldset>
+                <fieldset class="orca-fieldset c2">
+                    <label for="orca-estado">Estado <span class="obrigatorio">*</span></label>
+                    <span class="msg msg-estado"></span>
+                    <select name="orca-estado" id="orca-estado">
+                        <option value="">Selecione...</option>
+<option value="AC">Acre</option>
+<option value="AL">Alagoas</option>
+<option value="AP">Amapá</option>
+<option value="AM">Amazonas</option>
+<option value="BA">Bahia</option>
+<option value="CE">Ceará</option>
+<option value="DF">Distrito Federal</option>
+<option value="ES">Espírito Santo</option>
+<option value="GO">Goiás</option>
+<option value="MA">Maranhão</option>
+<option value="MT">Mato Grosso</option>
+<option value="MS">Mato Grosso do Sul</option>
+<option value="PA">Pará</option>
+<option value="PB">Paraíba</option>
+<option value="PR">Paraná</option>
+<option value="PE">Pernambuco</option> 
+<option value="PI">Piauí</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="RN">Rio Grande do Norte</option>
+<option value="RS">Rio Grande do Sul</option>
+<option value="RO">Rondônia</option> 
+<option value="RR">Roraima</option>
+<option value="SC">Santa Catarina</option>
+<option value="SP">São Paulo</option>
+<option value="SE">Sergipe</option>
+<option value="TO">Tocantins</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="line two-columns">
+                <fieldset class="orca-fieldset">
+                    <label for="orca-telefone">Telefone (fixo)</label>
+                    <span class="msg msg-telefone"></span>
+                    <input type="phone" id="orca-telefone" name="orca-telefone" placeholder="(XX) 0000-0000">
+                </fieldset>
+                <fieldset class="orca-fieldset">
+                    <label for="orca-celular">Celular <span class="obrigatorio">*</span></label>
+                    <span class="msg msg-celular"></span>
+                    <input type="phone" id="orca-celular" name="orca-celular" placeholder="(XX) 00000-0000">
+                    <input type="checkbox" id="orca-whatsapp" name="orca-whatsapp"><label for="orca-whatsapp" class="checkbox-label"><span>Este número é meu WhatsApp</span></label>
+                </fieldset>
+            </div>
+            <div class="form-buttons">
+                <div class="form-message dados-message"></div>
+                <a class="btn btn-default next-tipo">próximo <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- FIM - SEUS DADOS -->
+
+        <!-- TIPO DE PROJETOS -->
+        <div id="tipo" class="orca-section">
+            <h3>Tipo de Projeto</h3>
+            <p>Clique no tipo de projeto que desejar uma proposta.</p>
+            <div id="orca-tipos">
+                <input type="radio" name="orca-tipo" id="orca-web" value="web"><label for="orca-web"></label>
+                <input type="radio" name="orca-tipo" id="orca-design" value="design"><label for="orca-design"></label>
+                <input type="radio" name="orca-tipo" id="orca-dev" value="dev"><label for="orca-dev"></label>
+            </div>
+            <div class="form-buttons">
+                <div class="form-message tipo-message"></div>
+                <a class="btn back back-dados"><i class="fa fa-long-arrow-left"></i> anterior</a>
+                <a class="btn btn-default next-projeto">próximo <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- FIM - TIPO DE PROJETOS -->
+
+        <!-- DADOS DO PROJETO -->
+        <div id="projeto" class="orca-section">
+
+            <!-- WEB -->
+            <div id="orca-projeto-web" class="orca-projeto">
+                <h3>Web</h3>
+                <p>Se está aqui é porque você quer criar algo na internet. Seja um site, blog, portal ou apenas uma landing page. Está no lugar certo! Preencha todas as informações com o máximo de zelo e te mando uma proposta. Lembre-se quanto melhor responder as perguntas, mais próximo do valor final do projeto conseguiremos chegar.</p>
+                <fieldset class="orca-fieldset" id="orca-fs-ja-tem-site">
+                    <label for="orca-ja-tem-site" class="orca-field-title">Você já tem um site, blog, ou landing page?</label>
+                    <input type="radio" name="orca-ja-tem-site" id="orca-ja-tem-site-sim" value="sim"><label for="orca-ja-tem-site-sim"><span>Sim</span></label>
+                    <input type="radio" name="orca-ja-tem-site" id="orca-ja-tem-site-nao" value="nao"><label for="orca-ja-tem-site-nao"><span>Não</span></label>
+                    <div id="orca-seu-site-input-box" class="input-box">
+                        <label for="orca-seu-site" class="orca-field-title" style="margin-bottom:10px;">Me fale o endereço do seu site:</label>
+                        <input type="text" name="orca-seu-site" id="orca-seu-site" placeholder="http://seusite.com.br">
+                    </div>
+                </fieldset>
+                <fieldset class="orca-fieldset" id="orca-fs-dominio">
+                    <label for="orca-dominio" class="orca-field-title">Você já possui um domínio registrado?</label>
+                    <input type="radio" name="orca-ja-tem-dominio" id="orca-ja-tem-dominio-sim" value="sim"><label for="orca-ja-tem-dominio-sim"><span>Sim</span></label>
+                    <input type="radio" name="orca-ja-tem-dominio" id="orca-ja-tem-dominio-nao" value="nao"><label for="orca-ja-tem-dominio-nao"><span>Não</span></label>
+                </fieldset>
+                <fieldset class="orca-fieldset" id="orca-fs-hospedagem">
+                    <label for="orca-hospedagem" class="orca-field-title">Você já possui um serviço de hospedagem de sites?</label>
+                    <input type="radio" name="orca-ja-tem-hospedagem" id="orca-ja-tem-hospedagem-sim" value="sim"><label for="orca-ja-tem-hospedagem-sim"><span>Sim</span></label>
+                    <input type="radio" name="orca-ja-tem-hospedagem" id="orca-ja-tem-hospedagem-nao" value="nao"><label for="orca-ja-tem-hospedagem-nao"><span>Não</span></label>
+                    <div id="orca-sua-hospedagem-input-box" class="input-box">
+                        <label for="orca-sua-hospedagem" class="orca-field-title" style="margin-bottom:10px;">Qual empresa te presta esse serviço?</label>
+                        <input type="text" name="orca-sua-hospedagem" id="orca-sua-hospedagem" placeholder="Empresa de hospedagem">
+                    </div>
+                </fieldset>
+                <fieldset class="orca-fieldset" id="orca-fs-vendas">
+                    <label for="orca-vendas" class="orca-field-title">Seu site irá realizar vendas online?</label>
+                    <input type="radio" name="orca-vendas" id="orca-vendas-sim" value="sim"><label for="orca-vendas-sim"><span>Sim</span></label>
+                    <input type="radio" name="orca-vendas" id="orca-vendas-nao" value="nao"><label for="orca-vendas-nao"><span>Não</span></label>
+                </fieldset>
+            </div>
+            <!-- END - WEB -->
+
+            <!-- DESIGN -->
+            <div id="orca-projeto-design" class="orca-projeto">
+                <h3>Design</h3>
+                <p></p>
+            </div>
+            <!-- END - DESIGN -->
+
+            <!-- DEV -->
+            <div id="orca-projeto-dev" class="orca-projeto">
+                <h3>Dev</h3>
+                <p></p>
+            </div>
+            <!-- END - DEV -->
+
+            <div class="form-buttons">
+                <a class="btn back back-tipo"><i class="fa fa-long-arrow-left"></i> anterior</a>
+                <a class="btn btn-default next-projeto">próximo <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- FIM - TIPO DE PROJETOS -->
+
+    </form>
+    <div id="orca-separator"></div>
+    <section id="general-newsletter">
+    <div class="newsletter-container">
+        <h2>Quer ficar por dentro das <span>novidades</span>?</h2>
+        <h3>Assine minha newsletter</h3>
+        <p>Deixe seu e-mail e te envio muitas coisas legais!</p>
+        
+        <form id="newsletter-form" class="newsletter-form" data-environment="http://localhost/ricardoambnew/hooks/">
+            <fieldset id="newsletter-fieldset">
+                <label for="home-newsletter-name">Seu melhor e-mail</label>
+                <input type="e-mail" id="newsletter-email" name="newsletter-name" placeholder="seuemail@seudominio.com.br">
+                <span id="newsletter-msg"></span>
+            </fieldset>
+            <a class="btn btn-default" id="register-newsletter">assinar <i class="icon ion-md-checkmark"></i></a>
+        </form>
+    </div>
+</section>
+</section>
+
+    </section>
+</main>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-content">
+        <div class="footer-container">
+            <div class="footer-column">
+                <picture class="footer-brand">
+                    <img src="https://ricardoamb.com/assets/images/brand-default.svg" alt="Ricardo Amb">
+                </picture>
+                <nav id="footer-menu" rel="navigation">
+                    <div class="menu-container">
+                        <a href="https://ricardoamb.com"><i class="fa fa-home"></i> Home</a><br>
+                        <a href="https://ricardoamb.com/sobre">Sobre</a><br>
+                        <a href="https://ricardoamb.com/portfolio">Portfólio</a><br>
+                        <a href="https://ricardoamb.com/blog">Blog</a><br>
+                        <a href="https://ricardoamb.com/contato">Contato</a><br>
+                        <a href="https://buddy.ricardoamb.com">Entrar <i class="fa fa-sign-in"></i></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <div class="footer-address-container">
+                    <div class="footer-social">
+                        <span><a href="https://facebook.com/ricardoambdev" target="_blank"><i class="fa fa-facebook"></i></a></span>
+                        <span><a href="https://twitter.com/ricardoambdev" target="_blank"><i class="fa fa-twitter"></i></a></span>
+                        <span><a href="https://instagram.com/ricardoambdev" target="_blank"><i class="fa fa-instagram"></i></a></span>
+                        <span><a href="https://linkedin.com/ricardoambdev" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+                        <span><a href="https://github.com/ricardoamb" target="_blank"><i class="fa fa-github"></i></a></span>
+                        <span><a href="https://dribbble.com" target="_blank"><i class="fa fa-dribbble"></i></a></span>
+                        <span><a href="https://behance.com" target="_blank"><i class="fa fa-behance"></i></a></span>
+                    </div>
+                    <address class="footer-info">
+                        <i class="fa fa-envelope-o"></i>
+                        <a href="mailto:eu@ricardoamb.com">eu@ricardoamb.com</a> <span>|</span> <a href="mailto:ricardoamb.dev@gmail.com">ricardoamb.dev@gmail.com</a>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+5519992794765">+55 (19) 99279-4765 <i class="fa fa-whatsapp"></i></a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <span>&copy; Copyright 2018 > 2019</span> <span class="divider">-</span> <span>Todos direitos reservados para <strong>ricardoamb.com</strong></span> <span class="divider">-</span> <span><a href="https://ricardoamb.com/politica-de-privacidade">Política de Privacidade</a></span>
+    </div>
+</footer>
+<!-- Scripts -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://ricardoamb.com/assets/js/ricardoamb.js"></script>
+
+<script type="text/javascript" src="https://ricardoamb.com/assets/js/jquery.mask.min.js"></script><script type="text/javascript" src="https://ricardoamb.com/assets/js/orcamento.js"></script>
+
+
+</body>
+</html>
