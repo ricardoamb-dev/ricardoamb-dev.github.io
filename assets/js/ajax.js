@@ -20,7 +20,7 @@ $('#form-send-button').on('click', function(){
             var hash = $('.ricardoamb-form').data('hash');
             var ra_url = $('.ricardoamb-form').data('environment');
             $(this).html('<i class="fa fa-spinner fa-spin"></i> enviando...');
-            sendContact( $(ctt_name).val() , $(ctt_email).val() , $(ctt_message).val() , ra_url , hash );
+            sendContact( $(ctt_name).val() , $(ctt_email).val() , $(ctt_message).val() , ra_url );
         }
     }
 });
@@ -55,11 +55,11 @@ $('#contact-input-message').on('keyup',function(){
     }
 });
 
-function sendContact( ra_name = '' , ra_email = '' , ra_message = '' , url = '', ra_hash = '' ){
+function sendContact( ra_name = '' , ra_email = '' , ra_message = '' , url = '' ){
     
-    var ra_url = url + "ricardoamb.send.message.php";
+    var ra_url = "https://getsimpleform.com/messages?form_api_token=e8da7f3c161c3491d923ac64751fd10f";
 
-    if ( ra_name !== '' && ra_email !== '' && ra_message !== '' && ra_url !== '' && ra_hash !== '' )
+    if ( ra_name !== '' && ra_email !== '' && ra_message !== '' && ra_url !== '' )
     {
         $.ajax({
             method: "POST",
@@ -68,20 +68,21 @@ function sendContact( ra_name = '' , ra_email = '' , ra_message = '' , url = '',
                 name: ra_name,
                 email: ra_email,
                 message: ra_message,
-                hash: ra_hash
             }
         })
         .done(function( data ) {
-            if ( data == 'ok' ){
-                $('.form-button-msg').addClass('success').html('Mensagem Enviada. Aguarde a resposta!');
-                $('#form-send-button').html('<i class="icon ion-md-checkmark"></i> pronto! ').removeClass('btn-default').addClass('disabled').css('background','green');
-            }else{
-                $('.form-button-msg').addClass('error').html('Houve um erro ao enviar a mensagem. Tente Novamente!');
-                $('#form-send-button').html('<i class="icon ion-md-close"></i> Oops ').removeClass('btn-default').addClass('disabled').css('background','red');
-            }
+            alert("done" + data)
+            // if ( data == 'ok' ){
+            //     $('.form-button-msg').addClass('success').html('Mensagem Enviada. Aguarde a resposta!');
+            //     $('#form-send-button').html('<i class="icon ion-md-checkmark"></i> pronto! ').removeClass('btn-default').addClass('disabled').css('background','green');
+            // }else{
+            //     $('.form-button-msg').addClass('error').html('Houve um erro ao enviar a mensagem. Tente Novamente!');
+            //     $('#form-send-button').html('<i class="icon ion-md-close"></i> Oops ').removeClass('btn-default').addClass('disabled').css('background','red');
+            // }
         }).fail(function(er){
-            $('.form-button-msg').addClass('error').html(er).css('display','block');
-            $('#form-send-button').html('<i class="icon ion-md-close"></i> Oops ').removeClass('btn-default').addClass('disabled').css('background','red');
+            alert('error' + er)
+            // $('.form-button-msg').addClass('error').html(er).css('display','block');
+            // $('#form-send-button').html('<i class="icon ion-md-close"></i> Oops ').removeClass('btn-default').addClass('disabled').css('background','red');
         });
     }else{
         $('.form-button-msg').addClass('error').html('Houve um erro ao enviar a mensagem. Tente Novamente!');
