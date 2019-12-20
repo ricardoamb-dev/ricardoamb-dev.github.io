@@ -82,24 +82,26 @@
     <a href="https://ricardoamb.github.io/orcamento" class="btn btn-default">clique aqui para fazer um orçamento</a>
     <h2><span>ou</span>mande um oi</h2>
 </div>
-<form id="contact-form" class="contact-form ricardoamb-form">
+<form id="contact-form" class="contact-form ricardoamb-form" action="https://getsimpleform.com/messages?form_api_token=e8da7f3c161c3491d923ac64751fd10f" method="post">
+    <input type='hidden' name='redirect_to' value="https://ricardoamb.github.io/obrigado" />
+    <input type='hidden' name='title' value="Essa mensagem foi enviada pelo formulário de contato em seu site." />
     <div class="line-2c">
         <fieldset>
-            <label for="home-input-name">Nome<span id="name-msg" class="input-msg"></span></label>
-            <input type="text" name="home-input-name" id="contact-input-name" placeholder="João da Silva">
+            <label for="name">Nome<span id="name-msg" class="input-msg"></span></label>
+            <input type="text" name="name" id="name" placeholder="João da Silva">
         </fieldset>
         <fieldset>
-            <label for="home-input-email">E-mail<span id="email-msg" class="input-msg"></span></label>
-            <input type="text" name="home-input-email" id="contact-input-email" placeholder="joao@dasilva.com.br">
+            <label for="email">E-mail<span id="email-msg" class="input-msg"></span></label>
+            <input type="text" name="email" id="email" placeholder="joao@dasilva.com.br">
         </fieldset>
     </div>
-    <fieldset class="message-fieldset"> 
-        <label for="home-input-message">Mensagem<span id="message-msg" class="input-msg"></span></label> 
-        <textarea name="home-input-message" id="contact-input-message" rows="6" placeholder="Eu gostaria de falar com você sobre..."></textarea>
+    <fieldset class="message-fieldset">
+        <label for="message">Mensagem<span id="message-msg" class="input-msg"></span></label>
+        <textarea name="message" id="message" rows="6" placeholder="Eu gostaria de falar com você sobre..."></textarea>
     </fieldset>
     <div class="form-buttons">
         <span class="form-button-msg">Todos os campos são obrigatórios.</span>
-        <a id="form-send-button" class="btn btn-default"><i class="fa fa-paper-plane"></i> enviar</a>
+        <button class="btn btn-default contact-submit" type="submit"><i class="fa fa-paper-plane"></i> enviar</button>
     </div>
 </form>
 <section id="general-newsletter">
@@ -118,6 +120,7 @@
         </form>
     </div>
 </section>
+
     </section>
 </main>
 

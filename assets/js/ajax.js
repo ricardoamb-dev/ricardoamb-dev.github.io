@@ -1,10 +1,11 @@
-var ctt_name = $('#contact-input-name');
-var ctt_email = $('#contact-input-email');
-var ctt_message = $('#contact-input-message');
 $('#name-msg').removeClass('error').removeClass('sucess').html('');
 $('#email-msg').removeClass('error').removeClass('sucess').html('');
 
-$('#form-send-button').on('click', function(){
+$('.contact-submit').on('click',function(event){
+    event.preventDefault();
+    let ctt_name = $('#name');
+    let ctt_email = $('#email');
+    let ctt_message = $('#message');
     if ( !$(this).hasClass('disabled') )
     {
         if( $(ctt_name).val().length < 1 || $(ctt_email).val().length < 1 || $(ctt_message).val().length < 1 )
@@ -15,14 +16,12 @@ $('#form-send-button').on('click', function(){
             if ( $(ctt_name).val().length < 1 ) $('#name-msg').addClass('error').html('Este campo é obrigatório e deve ter pelo menos 4 letras.');
             if ( $(ctt_email).val().length < 1 ) $('#email-msg').addClass('error').html('Este campo é obrigatório e deve ser um endereço de e-mail válido.');
             if ( $(ctt_message).val().length < 1 ) $('#message-msg').addClass('error').html('Este campo é obrigatório.')
-        
         }else{
-            var hash = $('.ricardoamb-form').data('hash');
-            var ra_url = $('.ricardoamb-form').data('environment');
             $(this).html('<i class="fa fa-spinner fa-spin"></i> enviando...');
-            sendContact( $(ctt_name).val() , $(ctt_email).val() , $(ctt_message).val() , ra_url );
+            $('.contact-form').submit();
         }
     }
+
 });
 
 $('#contact-input-name').on('keyup',function(){
@@ -56,7 +55,7 @@ $('#contact-input-message').on('keyup',function(){
 });
 
 function sendContact( ra_name = '' , ra_email = '' , ra_message = '' , url = '' ){
-    
+
     var ra_url = "https://getsimpleform.com/messages?form_api_token=e8da7f3c161c3491d923ac64751fd10f";
 
     if ( ra_name !== '' && ra_email !== '' && ra_message !== '' && ra_url !== '' )
@@ -64,7 +63,7 @@ function sendContact( ra_name = '' , ra_email = '' , ra_message = '' , url = '' 
         $.ajax({
             method: "POST",
             url: ra_url,
-            data: { 
+            data: {
                 name: ra_name,
                 email: ra_email,
                 message: ra_message,
@@ -112,7 +111,7 @@ $('#newsletter-email').on('keyup',function(){
         $('#newsletter-msg').removeClass('error').addClass('success').html('<i class="fa fa-check"></i> E-mail Válido');
     }else{
         $('#newsletter-fieldset').removeClass('msg');
-        $('#newsletter-msg').removeClass('success').removeClass('error').html(''); 
+        $('#newsletter-msg').removeClass('success').removeClass('error').html('');
     }
 }).on('blur',function(){
     if ( $('#newsletter-email').val().length < 1 && isValidEmailAddress( $('#newsletter-email').val() ) == false )
@@ -132,7 +131,7 @@ function registerNewsletter()
         url: ra_url,
         async: true,
         cache: false,
-        data: { 
+        data: {
             email: $('#newsletter-email').val()
         }
     }).done(function(data){
